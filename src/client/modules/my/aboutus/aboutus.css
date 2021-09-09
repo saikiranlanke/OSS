@@ -1,0 +1,7 @@
+.small-box{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
+    padding: 15px;
+    text-align: center;
+}

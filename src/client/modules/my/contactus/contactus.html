@@ -1,0 +1,34 @@
+<template>
+    <section class="dark-yellow contactus-section">
+        <div class="container-fluid py-5 px-md-5">
+            <div class="py-5">
+                <div class="row m-0 flex-column-reverse flex-md-row">
+                    <div class="col-12 col-md-5 text-center">
+                        <div class="pt-5">
+                            <h2 class="section-heading blue-heading-color"> Contact Us</h2>
+                            <div class="line mb-5 purple-gradient"> </div>
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" placeholder="Name" class="form-control p-3" name="name" onkeyup={formHandler}>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" placeholder="Email" class="form-control p-3" name="email" onkeyup={formHandler}>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" placeholder="Phone" class="form-control p-3" name="phone" onkeyup={formHandler}>
+                            </div>
+                            <div class="mb-3">
+                                <textarea cols="10" rows="5" placeholder="Message" class="form-control p-3" name="message" onkeyup={formHandler}></textarea>
+                            </div>
+                            <button type="button" class="btn large-btn purple-gradient my-3 text-white" onclick={sendEmail}> Contact Us</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6 contactus-img">
+                        <img src="./resources/images/Contactus_section/contact.jpg" class="img-fluid" alt="contact us" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

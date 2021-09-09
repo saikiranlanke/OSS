@@ -1,0 +1,26 @@
+<template>
+    <section class="dark-yellow">
+        <div class="container-fluid py-5 px-md-5">
+            <div class="text-center py-4">
+                <h2 class="section-heading blue-heading-color">Our Services</h2>
+                <div class="line purple-gradient"></div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 service-section">
+                <template for:each={servicesData} for:item="service">
+                    <div class="col" key={service.title}>
+                        <div class="card services-animation">
+                            <div class={service.className}>
+                                <img src={service.image} class="card-img-top" alt={service.title}>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title fs-3">{service.title}</h5>
+                                <p class="card-text">{service.description}</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+</template>

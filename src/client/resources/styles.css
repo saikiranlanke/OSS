@@ -1,0 +1,46 @@
+.purple-gradient{
+    background: linear-gradient(to right, #0c1854 0, #4f0c80 51%, #0e184e 100%);
+}
+.dark-yellow{
+    background-color:#ffc72c ;
+}
+.section-heading{
+    font-style: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.line{
+    height:4px;
+    max-width: 100px;
+    margin:auto;
+    border-radius: 6px;
+}
+.blue-heading-color{
+    color:#1f2471;
+}
+.blue{
+    background-color: #1f0757 ;
+}
+.green{
+    background-color: #00b894 ;
+}
+.yellow{
+    background-color: #fdd76e ;
+}
+.red{
+    background-color: #e91e63 ;
+}
+.purple{
+    background-color: #2196f3 ;
+}
+.skyblue{
+    background-color: #673abf ;
+}
+.service-section, .about-section, .ourwork-section, .client-section, .contactus-section{
+    min-height: 100vh;
+}
+@media only screen and (min-width:1024px) {
+    .service-section, .about-section, .ourwork-section, .client-section, .contactus-section{
+        padding: 0 5rem;
+    }
+}

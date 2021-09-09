@@ -1,0 +1,33 @@
+.icon{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    z-index: 10;
+}
+.icon::after{
+    content: '';
+    border-radius: 50%;
+    border: 2px dashed #eee;
+    z-index: -10;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    height: calc(100% + 20px);
+    width: calc(100% + 20px);
+    background: transparent;
+}
+.services-animation{
+    border-radius: .3rem;
+    padding: 1.5rem;
+    height: 100%
+}
+.services-animation:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 56px rgb(47 91 234 / 14%);
+    color:#fff;
+    transition-duration: 500ms;
+    background: linear-gradient(to right, #0c1854 0, #4f0c80 51%, #0e184e 100%);
+}

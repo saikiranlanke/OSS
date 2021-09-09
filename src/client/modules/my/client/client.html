@@ -1,0 +1,36 @@
+<template>
+    <section class="client-section">
+        <div class="container-fluid py-5">
+            <div class="text-center py-5">
+                <h2 class="blue-heading-color section-heading">
+                    {clientData.sectionHeading}
+                </h2>
+                <div class="line purple-gradient"></div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 pt-5">
+                <template for:each={clientData.feedbacks} for:item="feedback">
+                    <div class="col" key={feedback.name}>
+                        <div class="card h-100 shadow">
+                            <img src={feedback.image} class="clientImg" alt={feedback.name} />
+                            <div class="card-body">
+                                <h3 class="text-center card-title">
+                                    {feedback.name}
+                                </h3>
+                                <h5 class="text-center">{feedback.role}</h5>
+                                <p class="card-text text-justify">{feedback.feedback}</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div class="row g-4 pt-3 m-0">
+                <template for:each={clientData.clientLogo} for:item="logo">
+                    <div class="col" key={logo}>
+                        <img src={logo} class="card-image-top" alt="clients logo" width="120" />
+                    </div>
+
+                </template>
+            </div>
+        </div>
+    </section>
+</template>
